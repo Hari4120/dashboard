@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Drawer, List, ListItem, ListItemText, IconButton, Button, ListItemIcon, Paper } from '@mui/material';
+import { Drawer, List, ListItem, ListItemText, IconButton, ListItemIcon } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import NotesRoundedIcon from '@mui/icons-material/NotesRounded';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
