@@ -52,7 +52,7 @@ const MainLayout = () => {
             }}
       >
         <List>
-          <ListItem button component={Link} to="/dashboard" onClick={toggleDrawer(false)}>
+          <ListItem button component={Link} to="/" onClick={toggleDrawer(false)}>
             <ListItemIcon style={iconStyle}>
               <HomeIcon />
             </ListItemIcon>
