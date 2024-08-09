@@ -1,0 +1,44 @@
+.billing-invoices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, #ffe4d8 0%, #ace0f9 100%);    padding: 20px;
+  }
+  
+  .billing-invoices h3 {
+    margin-top: -80px;
+    margin-bottom: 80px;
+    color: #333;
+  }
+  
+  .table-container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+  }
+  
+  .table-container .table {
+    margin: 0;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .table thead th {
+    background-color: #f8f9fa; 
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e0e0e0;
+  }

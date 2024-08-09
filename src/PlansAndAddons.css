@@ -1,0 +1,113 @@
+/* PlansAndAddons.css */
+.plans-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 175px 30px 0px 0px;
+  }
+  
+  .page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(to top, #ffe4d8 0%, #ace0f9 100%);
+  }
+  .main-heading {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .plans-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .plan-box {
+    flex: 0 0 auto auto;
+    animation: fadeIn 1s forwards;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plan-box:hover {
+    transform: scale(1.02);
+    background:rgba(203, 222, 245, 0.932);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan-box.selected {
+    border: 2px solid #da749e;
+  }
+
+  .plan-box h5 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .plan-box p {
+    margin: 10px 0;
+  }
+  
+  .processing-message {
+    margin-top: 20px;
+    color: rgb(0, 158, 34);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .save-changes-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    .plans-section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+  .main-heading{ 
+    margin-left: 10px;
+    margin-top: -80px;
+  }
+   .save-changes-button-container{
+    margin-top: -10px;
+    margin-left: 12.5px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+   }
+   .processing-message{
+    margin-left: 25px;
+    margin-top: -20px;
+    padding-bottom: 25px;
+   }
+  }
+    
+  @media (max-width: 480px) {
+      .plans-section {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+      }
+    }

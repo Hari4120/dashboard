@@ -1,0 +1,77 @@
+.notifications-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(to top, #ffe4d8 0%, #ace0f9 100%);
+      
+  }
+  
+  .notifications-container .main-heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .notification-section {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .notification-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .notification-box:hover {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .notifications-container button {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  @keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+  }
+  
+  .saved-message {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    color: green;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 5;
+    }
+  }
