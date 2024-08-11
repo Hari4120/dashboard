@@ -42,7 +42,7 @@ const Dashboard = () => {
                     <Card.Text>
                       Explore additional features by upgrading your plan.
                     </Card.Text>
-                    <Button variant="success">Upgrade Now</Button>
+                    <Button variant="success" style={{marginTop:'10px'}} href='./plansAddons'>Upgrade Now</Button>
                   </Card.Body>
                 </Card>
               </Col>

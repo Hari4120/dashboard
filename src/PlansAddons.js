@@ -11,11 +11,25 @@ const PlansAndAddons = () => {
   };
 
   const handleSaveChanges = () => {
-    setShowProcessingMessage(true);
-    setTimeout(() => {
-      setShowProcessingMessage(false);
-    }, 3000);
+    
+    if (selectedPlan) {
+      setShowProcessingMessage(true);
+
+    
+      const upiUrl = `upi://pay?pa=bhari4120@okaxis&pn=&mc=1234&tid=00001&tr=ABC123&tn=Payment%20for%20${selectedPlan}&am=100.00&cu=INR&url=https://example.com`;
+
+      
+      window.location.href = upiUrl;
+
+      
+      setTimeout(() => {
+        setShowProcessingMessage(false);
+      }, 3000);
+    } else {
+      alert('Please select a plan before proceeding.');
+    }
   };
+  
 
   return (
     <div className='page'>
