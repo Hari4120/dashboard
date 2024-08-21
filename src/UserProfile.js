@@ -37,7 +37,7 @@ const UserProfile = () => {
                     variant="secondary"
                     onClick={handleEditPicClick}
                   >
-                  Edit ✎
+                  Edit 🖉
                   </Button>
               </Col>
               <Col md={8}>
